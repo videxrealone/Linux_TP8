@@ -18,6 +18,7 @@
 
 * **q1**
 
+![image](https://user-images.githubusercontent.com/91763346/206729052-9d9a2e6f-dc46-49b4-ad52-07db0d95a06f.png)
 
 
 * **q2**
