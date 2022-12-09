@@ -23,12 +23,51 @@
 ![image](https://user-images.githubusercontent.com/91763346/206729052-9d9a2e6f-dc46-49b4-ad52-07db0d95a06f.png)
 
 
-* **q2**
+* **q2 & q3 & q4**
 
+``` for i in $@; do
+  if [[ $i == "-l" ]]; then
+    listf=1
+  fi
+done
 
+#testing for -r
+for i in $@; do
+  if [[ $i == "-r" ]]; then
+    rem=1
+  fi
+done
 
-* **q3**
+#case where -l exists
 
+if [ listf -eq 1 ]; then
+  for i in $@; do
+    ls ~/Poubelle
+  done
+fi
 
+#case where -r exists
+if [ listf -eq 1 ]; then
+  for i in $@; do
+    rm ~/Poubelle *
+  done
+fi
 
-* **q4**
+#case where -r and -l exist
+if [ listf -eq 1 && rem -eq 1 ]; then
+  for i in $@; do
+    echo "moving file"
+    mv $i ~/Poubelle
+    echo "Le dossier poubelle contient"
+    ls ~/Poubelle
+    echo "Removing files"
+    rm ~/Poubelle
+  done
+else
+  for i in $@; do
+     echo "moving file"
+     mv $i ~/Poubelle
+  done
+fi
+
+```
