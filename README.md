@@ -25,7 +25,8 @@
 
 * **q2 & q3 & q4**
 
-``` for i in $@; do
+``` 
+for i in $@; do
   if [[ $i == "-l" ]]; then
     listf=1
   fi
