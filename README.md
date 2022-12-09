@@ -4,6 +4,8 @@
 
 * **q1**
 
+![image](https://user-images.githubusercontent.com/91763346/206732438-a2c8b60d-b061-4fd8-a3ee-34dbe913b6dd.png)
+
 ![image](https://user-images.githubusercontent.com/91763346/206724414-f4737399-fcad-4e25-8631-b2fc25f1715d.png)
 
 * **q2**
